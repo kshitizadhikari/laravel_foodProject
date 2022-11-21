@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    margin: 10px 40px;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5%);
+    transition: all 0.5s;
+    transform: translateX(-100%);
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0%);
+    transform: translateX(0%);
+}
+
+.main.hidden {
+    transform: translateX(-100%);
+    transform: translateY(-100%);
+}
+
+.main.show {
+    transform: translateX(0%);
+    transform: translateY(0%);
+}
+
+.col.col1.show {
+    transform: translateX(0%);
+    transition-delay: 1s;
+}
+.col.col2.show {
+    transform: translateX(0%);
+    transition-delay: 1.5s;
+}
+.container {
+    box-sizing: border-box;
+}
+
+.header {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    height: 80vh;
+    width: 100%;
+    background-color: rgb(33, 68, 68);
+    justify-content: space-between;
+}
+
+.col {
+    display: flex;
+    width: 50%;
+    margin: 20px;
+    background-color: rgb(87, 46, 114);
+}
+
+.col.col1 {
+    background-color: rgb(212, 200, 200);
+    flex-grow: 1;
+    border: 2px solid lightseagreen;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.col.col2 {
+    flex-grow: 2;
+    padding: 0;
+    background: transparent;
+}
+
+/* FORM KO SECTION */
+.formko {
+    padding: 20px;
+}
+
+.logo {
+    height: 6vmin;
+}
+.form-control {
+    border: 1px solid black;
+    width: 40vmin;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tableko {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.table {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
